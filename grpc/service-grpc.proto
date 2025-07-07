@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package sampleServiceName;
+
+option go_package = "/sampleServiceNameProto";
+
+message BlurRequest {
+    bytes image = 1;
+    uint32 blur_amount = 2;
+}
+
+message BlurResponse {
+    bytes image = 1;
+}
+
+service ImageService {
+    rpc BlurBackground (BlurRequest) returns (BlurResponse);
+}
