@@ -13,3 +13,6 @@ Contains various small functions that gets some specific job done. Each function
 ## GRPC
 It's a sample GRPC service that has a go service that communicates with a python grpc server to handle a `blurBackground` request. The python script uses a ML model to detect the background of an image and then blur behind it. 
 The complexity of the blurring is hidden behind an `infer` method that is not included here. 
+
+## TODO
+1. Add tests to make it easier to check the functions
